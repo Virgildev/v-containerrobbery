@@ -20,7 +20,7 @@ Key Features:
     ps-dispatch>client>alerts
 
     add:
-```
+    
     local function ContainerRobberyAlert()
     local coords = GetEntityCoords(cache.ped)
     local vehicle = GetVehicleData(cache.vehicle)
@@ -40,10 +40,10 @@ Key Features:
 
     TriggerServerEvent('ps-dispatch:server:notify', dispatchData)
 end 
-exports('ContainerRobberyAlert', ContainerRobberyAlert)```
+exports('ContainerRobberyAlert', ContainerRobberyAlert)
 
     ps-dispatch>shared>config
-```
+
     add:
         ['containerRobbery'] = { 
         radius = 0,
@@ -56,7 +56,7 @@ exports('ContainerRobberyAlert', ContainerRobberyAlert)```
         offset = false,
         flash = false
     },  
-```
+
 
 Requirements:
 -ox_target/qb-target
