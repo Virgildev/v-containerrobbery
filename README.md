@@ -20,42 +20,42 @@ Key Features:
     ps-dispatch>client>alerts
 
     add:
-    
-    local function ContainerRobberyAlert()
-    local coords = GetEntityCoords(cache.ped)
-    local vehicle = GetVehicleData(cache.vehicle)
 
-    local dispatchData = {
-        message = 'Container Robbery in Progress',
-        codeName = 'containerRobbery',
-        code = '10-90',
-        icon = 'fas fa-box',
-        priority = 2,
-        coords = coords,
-        street = GetStreetAndZone(coords),
-        heading = GetPlayerHeading(),
-        gender = GetPlayerGender(),
-        jobs = { 'leo' }
-    } 
+                local function ContainerRobberyAlert()
+                local coords = GetEntityCoords(cache.ped)
+                local vehicle = GetVehicleData(cache.vehicle)
 
-    TriggerServerEvent('ps-dispatch:server:notify', dispatchData)
-end 
-exports('ContainerRobberyAlert', ContainerRobberyAlert)
+                local dispatchData = {
+                    message = 'Container Robbery in Progress',
+                    codeName = 'containerRobbery',
+                    code = '10-90',
+                    icon = 'fas fa-box',
+                    priority = 2,
+                    coords = coords,
+                    street = GetStreetAndZone(coords),
+                    heading = GetPlayerHeading(),
+                    gender = GetPlayerGender(),
+                    jobs = { 'leo' }
+                } 
+                TriggerServerEvent('ps-dispatch:server:notify', dispatchData)
+                end 
+                exports('ContainerRobberyAlert', ContainerRobberyAlert)
 
     ps-dispatch>shared>config
 
+
     add:
-        ['containerRobbery'] = { 
-        radius = 0,
-        sprite = 119,
-        color = 1,
-        scale = 1.5,
-        length = 2,
-        sound = 'Lose_1st',
-        sound2 = 'GTAO_FM_Events_Soundset',
-        offset = false,
-        flash = false
-    },  
+                            ['containerRobbery'] = { 
+                            radius = 0,
+                            sprite = 119,
+                            color = 1,
+                            scale = 1.5,
+                            length = 2,
+                            sound = 'Lose_1st',
+                            sound2 = 'GTAO_FM_Events_Soundset',
+                            offset = false,
+                            flash = false
+                            },  
 
 
 Requirements:
