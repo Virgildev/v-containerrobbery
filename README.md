@@ -18,7 +18,6 @@ Key Features:
 -PS Disptach Integration:
 
     ps-dispatch>client>alerts
-
     add:
 
                 local function ContainerRobberyAlert()
@@ -42,9 +41,8 @@ Key Features:
                 exports('ContainerRobberyAlert', ContainerRobberyAlert)
 
     ps-dispatch>shared>config
-
-
     add:
+    
                             ['containerRobbery'] = { 
                             radius = 0,
                             sprite = 119,
