@@ -8,6 +8,7 @@ Unlock the thrill of heists with our Container Robbery script designed for FiveM
 Key Features:
 
 -Customizable config:
+
     able to add as many robbery locations as you wish
     able to add or remove to a certain number of searchable locations
     dispatch intergration, you can easily change by going to line 170 in client.lua
@@ -19,8 +20,8 @@ Key Features:
     ps-dispatch>client>alerts
 
     add:
-
-   ``` local function ContainerRobberyAlert()
+```
+    local function ContainerRobberyAlert()
     local coords = GetEntityCoords(cache.ped)
     local vehicle = GetVehicleData(cache.vehicle)
 
@@ -35,14 +36,14 @@ Key Features:
         heading = GetPlayerHeading(),
         gender = GetPlayerGender(),
         jobs = { 'leo' }
-    } ```
+    } 
 
     TriggerServerEvent('ps-dispatch:server:notify', dispatchData)
 end 
 exports('ContainerRobberyAlert', ContainerRobberyAlert)```
 
     ps-dispatch>shared>config
-
+```
     add:
         ['containerRobbery'] = { 
         radius = 0,
@@ -54,7 +55,8 @@ exports('ContainerRobberyAlert', ContainerRobberyAlert)```
         sound2 = 'GTAO_FM_Events_Soundset',
         offset = false,
         flash = false
-    },   ```
+    },  
+```
 
 Requirements:
 -ox_target/qb-target
