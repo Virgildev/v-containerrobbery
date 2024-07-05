@@ -10,7 +10,7 @@ Unlock the thrill of heists with our Container Robbery script designed for FiveM
 - Customizable config:
   - Able to add as many robbery locations as you wish.
   - Able to add or remove a certain number of searchable locations.
-  - Dispatch integration, which can be modified by editing `client.lua`.
+  - Dispatch integration, which can be modified by editing `client.lua` on line 170.
   - Cooldown system.
   - Unlimited robbery locations.
 
