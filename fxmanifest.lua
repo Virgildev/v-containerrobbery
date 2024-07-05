@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Your Name'
+author 'Virgil'
 description 'Container Robbery Script'
 version '1.0.0'
 
