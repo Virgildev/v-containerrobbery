@@ -1,3 +1,5 @@
+# ⚠️ **THIS SCRIPT IS NO LONGER MAINTAINED, USE AT YOUR OWN RISK** ⚠️
+
 # v-containerrobbery
 A QBCore/OX container robbery script for FiveM servers.
 
